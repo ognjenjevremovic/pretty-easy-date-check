@@ -55,8 +55,6 @@ let now = isDate(new Date().toString());    //  true
 **Great!**
 Anyone can help make this project better - check out the [github](https://github.com/ognjenjevremovic/pretty-easy-date-check) repository!
 
-&nbsp;
-
 ### Found a bug?
 Please open a an [issue](https://github.com/ognjenjevremovic/pretty-easy-date-check/issues).
 
