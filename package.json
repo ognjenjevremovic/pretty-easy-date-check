@@ -1,0 +1,35 @@
+{
+  "name": "pretty-easy-date-check",
+  "version": "1.0.0",
+  "description": "Check if a supplied value is a valid Date (instanceof Date or a valid string representation of a date that can be turned into one).",
+  "author": "Ognjen Jevremović <jevremovic.ognjen@gmail.com> (https://github.com/ognjenjevremovic)",
+  "homepage": "https://github.com/ognjenjevremovic/pretty-easy-date-check",
+  "bugs": {
+    "url": "https://github.com/ognjenjevremovic/pretty-easy-date-check/issues",
+    "email": "ognjen.jevremovic@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ognjenjevremovic/pretty-easy-date-check.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "mocha ./spec.js"
+  },
+  "keywords": [
+    "pretty-easy-date-check",
+    "pretty-easy-*",
+    "pretty-easy",
+    "prettyeasy",
+    "date-check",
+    "date check",
+    "date checker"
+  ],
+  "devDependencies": {
+    "@types/node": "^7.0.7",
+    "mocha": "^3.2.0",
+    "typescript": "^2.2.1"
+  }
+}
