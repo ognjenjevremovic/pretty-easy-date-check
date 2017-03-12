@@ -1,18 +1,12 @@
 //  Dependancies
-import months from './months';
+import { months } from './months';
 
 //  Expected types
-type param   =  string | Date;
-type invalid =  '' | 0 | null | undefined | false | {} | Array<{}>;
+export type param = string | Date;
 
 //  References
-const getDay    : () => number = Date.prototype.getDay;
 const getMonth  : () => number = Date.prototype.getDate;
 const getYear   : () => number = Date.prototype.getFullYear;
-const toStr     : () => string = Object.prototype.toString;
-
-//  Date object str
-const dateStr   : string = '[object Date]';
 
 //  Check if parameter passed is instance of Date Class
 function dateObject(value: Date): boolean {
@@ -21,7 +15,7 @@ function dateObject(value: Date): boolean {
 
     //  Double check
     try {
-        return (getDay.call(value) && getMonth.call(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
+        return (getMonth.call(value) && getYear.call(value)) ? true : false;
     } catch(err) {
         return false;
     }
@@ -52,6 +46,6 @@ function stringDate(value: string): boolean {
 //  Module
 export default function isDate(value: param): boolean {
     if  (typeof value === 'string') return stringDate(value);
-    else if (typeof value === 'object' || value === null) return dateObject(value);
+    else if (typeof value === 'object' && value !== null) return dateObject(value);
     else return false;
 }

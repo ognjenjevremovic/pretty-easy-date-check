@@ -1,5 +1,5 @@
 //  Month constructor
-class Month {
+export class Month {
     constructor(
         public name : string,
         public abbr : string,
@@ -9,7 +9,7 @@ class Month {
 }
 
 //  Months array
-const months: Month[] = [
+export const months: Month[] = [
     new Month(  'January'   , 'Jan', 1, 31),
     new Month(  'February'  , 'Feb', 2, 28),
     new Month(  'March'     , 'Mar', 3, 31),
@@ -23,4 +23,3 @@ const months: Month[] = [
     new Month(  'November'  , 'Nov', 11, 30),
     new Month(  'December'  , 'Dec', 12, 31)
 ];
-export default months;

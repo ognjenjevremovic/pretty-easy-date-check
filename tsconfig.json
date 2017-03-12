@@ -2,21 +2,21 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
-        "moduleResolution": "node",
-        "charset": "utf-8",
         "pretty": true,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "sourceMap": false,
+        "sourceMap": true,
         "removeComments": false,
-        "outDir": "./dist"
+        "outDir": "./dist",
+        "declaration": true,
+        "lib": [
+            "es5",
+            "es6",
+            "es7"
+        ]
     },
     "exclude": [
         "node_modules/",
         "spec.js"
-    ],
-    "files": [
-        "index.d.ts"
-    ],
-    "compileOnSave": true
+    ]
 }

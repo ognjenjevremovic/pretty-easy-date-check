@@ -1,5 +1,2 @@
-declare module 'pretty-easy-date-check' {
-    function isDate(parameter: string | Date): boolean;
-    
-    export = isDate;
-}
+export declare type param = string | Date;
+export default function isDate(value: param): boolean;
