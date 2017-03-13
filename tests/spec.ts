@@ -4,7 +4,7 @@ import isDate from '../lib/index';
 
 
 //  For test purposes only
-export default function isDate(value?: any): boolean;
+declare function isDate(value?: any): boolean;
 
 
 //  Console message outputs
