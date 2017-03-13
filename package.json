@@ -1,6 +1,6 @@
 {
   "name": "pretty-easy-date-check",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a supplied value is a valid Date (instanceof Date or a valid string representation of a date that can be turned into one).",
   "author": "Ognjen Jevremović <jevremovic.ognjen@gmail.com> (https://github.com/ognjenjevremovic)",
   "homepage": "https://github.com/ognjenjevremovic/pretty-easy-date-check",
@@ -16,7 +16,7 @@
   "main": "index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "mocha ./spec.js"
+    "test": "mocha ./tests/spec.js"
   },
   "keywords": [
     "pretty-easy-date-check",
@@ -28,6 +28,7 @@
     "date checker"
   ],
   "devDependencies": {
+    "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.7",
     "mocha": "^3.2.0",
     "typescript": "^2.2.1"

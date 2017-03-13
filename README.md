@@ -1,4 +1,7 @@
 # **pretty-easy-date-check**
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Tests][tests-image]][travis-url]
 
 ### *What is pretty-easy-date-check?*
 ***pretty-easy-date-check*** *is a simple NodeJS module for performing check against a supplied value to determine if it is a valid date (or can be transformed to one!)*.
@@ -62,3 +65,9 @@ Please open a an [issue](https://github.com/ognjenjevremovic/pretty-easy-date-ch
 Copyright (c) 2017 [Ognjen Jevremović](https://github.com/ognjenjevremovic)
 
 Licensed under the [MIT](https://github.com/ognjenjevremovic/pretty-easy-date-check/blob/master/LICENSE) License.
+
+[npm-image]: https://img.shields.io/npm/v/pretty-easy-date-check.svg
+[npm-url]: https://npmjs.org/package/pretty-easy-date-check
+[travis-image]: https://img.shields.io/travis/ognjenjevremovic/pretty-easy-date-check/master.svg
+[travis-url]: https://travis-ci.org/ognjenjevremovic/pretty-easy-date-check
+[tests-image]: https://img.shields.io/badge/test-passing-green.svg

@@ -1,14 +1,19 @@
 //  Dependancies
-const assert = require('assert');
-const isDate = require('./index');
+import * as assert from 'assert';
+import isDate from '../lib/index';
+
+
+//  For test purposes only
+export default function isDate(value?: any): boolean;
+
 
 //  Console message outputs
 const date      = 'Value provided is a valid Date';
-const not_date  = 'Value provided is not a valid Date';
+const notDate   = 'Value provided is not a valid Date';
 
 //  Test - Not valid dates
 describe('Values are not valid dates', () => {
-    
+
     //  undefined
     it('should return false - undefined', () => {
         assert.notEqual(isDate(), true, date);
@@ -56,7 +61,7 @@ describe('Values are not valid dates', () => {
 
     //  function
     it('should return false - function', () => {
-        assert.notEqual(isDate(function() {}), true, date);
+        assert.notEqual(isDate(() => { }), true, date);
     });
 
     //  invalid date string (month > 12)
@@ -89,15 +94,15 @@ describe('Values are valid dates', () => {
 
     //  Valid strings
     it('should return true - valid string date', () => {
-        assert.equal(isDate('9.17.15'), true, not_date);
-        assert.equal(isDate('9,17,15'), true, not_date);
-        assert.equal(isDate('9/17/15'), true, not_date);
-        assert.equal(isDate('9-17-15'), true, not_date);
-        assert.equal(isDate('9 17 15'), true, not_date);
-        assert.equal(isDate('09.17.2015'), true, not_date);
-        assert.equal(isDate('Thu Mar 9 17'), true, not_date);
-        assert.equal(isDate('Thu Mar 09 2017'), true, not_date);
-        assert.equal(isDate(new Date().toString()), true, not_date)
+        assert.equal(isDate('9.17.15'), true, notDate);
+        assert.equal(isDate('9,17,15'), true, notDate);
+        assert.equal(isDate('9/17/15'), true, notDate);
+        assert.equal(isDate('9-17-15'), true, notDate);
+        assert.equal(isDate('9 17 15'), true, notDate);
+        assert.equal(isDate('09.17.2015'), true, notDate);
+        assert.equal(isDate('Thu Mar 9 17'), true, notDate);
+        assert.equal(isDate('Thu Mar 09 2017'), true, notDate);
+        assert.equal(isDate(new Date().toString()), true, notDate)
     });
 
 });
