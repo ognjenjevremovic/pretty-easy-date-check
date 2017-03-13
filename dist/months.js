@@ -1,14 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //  Month constructor
-class Month {
-    constructor(name, abbr, ord, days) {
+var Month = (function () {
+    function Month(name, abbr, ord, days) {
         this.name = name;
         this.abbr = abbr;
         this.ord = ord;
         this.days = days;
     }
-}
+    return Month;
+}());
 exports.Month = Month;
 //  Months array
 exports.months = [

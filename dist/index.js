@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //  Dependancies
-const months_1 = require("./months");
+var months_1 = require("./months");
 //  References
-const getMonth = Date.prototype.getDate;
-const getYear = Date.prototype.getFullYear;
-const toStr = Object.prototype.toString;
+var getMonth = Date.prototype.getDate;
+var getYear = Date.prototype.getFullYear;
+var toStr = Object.prototype.toString;
 //  Date object str
-const dateStr = '[object Date]';
+var dateStr = '[object Date]';
 //  Check if parameter passed is instance of Date Class
 function dateObject(value) {
     //  Not
@@ -28,11 +28,12 @@ function stringDate(value) {
         return false;
     //  MM.DD.YYYY. - format [.,/-]
     if (value.length < 12) {
-        const date = value.split(/[.]|[,]|[/]|[-]|\s/g);
-        const month = +date[0];
-        const day = +date[1];
-        let isValid;
-        for (const _month of months_1.months) {
+        var date = value.split(/[.]|[,]|[/]|[-]|\s/g);
+        var month = +date[0];
+        var day = +date[1];
+        var isValid = void 0;
+        for (var _i = 0, months_2 = months_1.months; _i < months_2.length; _i++) {
+            var _month = months_2[_i];
             (_month.ord >= month && _month.days >= day) ? isValid = true : isValid = false;
         }
         return isValid ? !isNaN(Date.parse(value)) : false;
