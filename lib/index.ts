@@ -7,6 +7,11 @@ export type param = string | Date;
 //  References
 const getMonth  : () => number = Date.prototype.getDate;
 const getYear   : () => number = Date.prototype.getFullYear;
+const toStr     : () => string = Object.prototype.toString;
+
+
+//  Date object str
+ const dateStr   : string = '[object Date]';
 
 //  Check if parameter passed is instance of Date Class
 function dateObject(value: Date): boolean {
@@ -15,7 +20,7 @@ function dateObject(value: Date): boolean {
 
     //  Double check
     try {
-        return (getMonth.call(value) && getYear.call(value)) ? true : false;
+        return (getMonth.call(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
     } catch(err) {
         return false;
     }

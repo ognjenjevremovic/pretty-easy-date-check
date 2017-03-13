@@ -5,6 +5,9 @@ const months_1 = require("./months");
 //  References
 const getMonth = Date.prototype.getDate;
 const getYear = Date.prototype.getFullYear;
+const toStr = Object.prototype.toString;
+//  Date object str
+const dateStr = '[object Date]';
 //  Check if parameter passed is instance of Date Class
 function dateObject(value) {
     //  Not
@@ -12,7 +15,7 @@ function dateObject(value) {
         return false;
     //  Double check
     try {
-        return (getMonth.call(value) && getYear.call(value)) ? true : false;
+        return (getMonth.call(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
     }
     catch (err) {
         return false;
