@@ -1,6 +1,6 @@
 {
   "name": "pretty-easy-date-check",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check if a supplied value is a valid Date (instanceof Date or a valid string representation of a date that can be turned into one).",
   "author": "Ognjen Jevremović <jevremovic.ognjen@gmail.com> (https://github.com/ognjenjevremovic)",
   "homepage": "https://github.com/ognjenjevremovic/pretty-easy-date-check",
