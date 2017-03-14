@@ -1,17 +1,20 @@
 //  Dependancies
 import { months } from './months';
 
+
 //  Expected types
 export type param = string | Date;
 
-//  References
-const getMonth  : () => number = Date.prototype.getDate;
+//  Checks
+const getDay    : () => number = Date.prototype.getDate;
+const getMonth = (value: Date): number => {
+    return (Date.prototype.getMonth.call(value) + 1);
+};
 const getYear   : () => number = Date.prototype.getFullYear;
 const toStr     : () => string = Object.prototype.toString;
-
-
 //  Date object str
  const dateStr   : string = '[object Date]';
+
 
 //  Check if parameter passed is instance of Date Class
 function dateObject(value: Date): boolean {
@@ -20,11 +23,12 @@ function dateObject(value: Date): boolean {
 
     //  Double check
     try {
-        return (getMonth.call(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
+        return (getDay.call(value) && getMonth(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
     } catch(err) {
         return false;
     }
 }
+
 //  String representation of date
 function stringDate(value: string): boolean {
     //  Not
@@ -47,6 +51,7 @@ function stringDate(value: string): boolean {
     //  YYYY-MM-DDTTT:HH:MM.SSSZ - format
     else return !isNaN(Date.parse(value));
 }
+
 
 //  Module
 export default function isDate(value: param): boolean {

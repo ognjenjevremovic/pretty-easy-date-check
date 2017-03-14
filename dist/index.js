@@ -2,8 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //  Dependancies
 var months_1 = require("./months");
-//  References
-var getMonth = Date.prototype.getDate;
+//  Checks
+var getDay = Date.prototype.getDate;
+var getMonth = function (value) {
+    return (Date.prototype.getMonth.call(value) + 1);
+};
 var getYear = Date.prototype.getFullYear;
 var toStr = Object.prototype.toString;
 //  Date object str
@@ -15,7 +18,7 @@ function dateObject(value) {
         return false;
     //  Double check
     try {
-        return (getMonth.call(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
+        return (getDay.call(value) && getMonth(value) && getYear.call(value) && (toStr.call(value) === dateStr)) ? true : false;
     }
     catch (err) {
         return false;
