@@ -1,6 +1,6 @@
 {
   "name": "pretty-easy-date-check",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Check if a supplied value is a valid Date (instanceof Date or a valid string representation of a date that can be turned into one).",
   "author": "Ognjen Jevremović <jevremovic.ognjen@gmail.com> (https://github.com/ognjenjevremovic)",
   "homepage": "https://github.com/ognjenjevremovic/pretty-easy-date-check",
@@ -24,13 +24,16 @@
     "pretty-easy",
     "prettyeasy",
     "date-check",
-    "valid-date",
-    "date-validation",
     "date check",
-    "date checker",
+    "valid-date",
     "valid date",
+    "date-checker",
+    "date checker",
+    "date-validation",
     "date validation",
-    "check if valid date"
+    "check if valid date",
+    "is value date",
+    "is valid date"
   ],
   "devDependencies": {
     "@types/mocha": "^2.2.40",
