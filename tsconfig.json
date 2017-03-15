@@ -7,7 +7,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "sourceMap": true,
         "removeComments": false,
-        "outDir": "./dist",
+        "outDir": "dist",
         "declaration": true,
         "lib": [
             "es5",
@@ -16,7 +16,10 @@
         ]
     },
     "exclude": [
-        "node_modules/",
-        "tests/"
+        "node_modules/"
+    ],
+    "include": [
+        "lib/**/*.ts",
+        "tests/spec.ts"
     ]
 }
