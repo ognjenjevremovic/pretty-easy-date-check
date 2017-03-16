@@ -4,7 +4,9 @@
 [![Tests][tests-image]][travis-url]
 
 ### *What is pretty-easy-date-check?*
-***pretty-easy-date-check*** *is a simple NodeJS module for performing check against a supplied value to determine if it is a valid date (or can be transformed into one, using a Date constructor!)*.
+***pretty-easy-date-check*** *is a simple NodeJS module for performing check against a supplied value to determine if it is a valid date (instance of Date class or a valid string representation of a date that can be used as a valid argument to instantiate the Date class!)*.
+
+If you just want to check if the value is an instance of a Date class, consider using a [utility library](https://www.npmjs.com/package/pretty-easy-data-types) instead.
 
 &nbsp;
 
@@ -52,6 +54,40 @@ isDate('Fri Mar 10 2017');        //  true
 isDate(new Date().toString());    //  true
 
 //  Pretty much, everything else should result in a false value
+```
+
+&nbsp;
+
+### More flexible checks
+```javascript
+/*
+*   For more flexible Date data type checks,
+*   consider including a utility library, such as
+*             pretty-easy-data-types
+*
+*   https://www.npmjs.com/package/pretty-easy-data-types
+*/
+const { 
+    isDate,         //  check for instances of Date class
+    isError         //  check for instances of Error class
+} = require('pretty-easy-data-types');
+const canBeDate  = require('pretty-easy-date-check');
+
+
+//  Check if the value is the instance of a Date class
+//  if it is, use it as the value
+//  else if it is a valid string representation of a date
+//  construct a new instance of the Date class
+//  else construct a new instance of Error class and throw it
+const sampleDate = 'not date';
+const date = isDate(sampleDate) ? 
+    sampleDate : 
+    (canBeDate(sampleDate) ? new Date(sampleDate) : new Error('Invalid date!'));
+
+//  Handle the error
+if(isError(date)) console.log('Invalid date!');
+//  Do something wit the date object
+else console.log(`Valid date supplied`);
 ```
 
 &nbsp;
