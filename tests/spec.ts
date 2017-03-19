@@ -11,6 +11,7 @@ declare function isValidDate(value?: any): boolean;
 const date      = 'Value provided is a valid Date';
 const notDate   = 'Value provided is not a valid Date';
 
+/*
 //  Test - Not valid dates
 describe('Values are not valid dates', () => {
 
@@ -106,3 +107,8 @@ describe('Values are valid dates', () => {
     });
 
 });
+*/
+
+describe('Invalid data type passed', /** invalidDataTypes */);
+describe('Invalid date value passed', /** invalidDataTypes */);
+describe('Valid date value passed', /** invalidDataTypes */);
