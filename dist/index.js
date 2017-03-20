@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var valiDate_1 = require("./valiDate");
-exports.isValidDate = valiDate_1.isValidDate;
+var isValidDate_1 = require("./isValidDate");
+exports.isValidDate = isValidDate_1.isValidDate;
 //# sourceMappingURL=index.js.map
