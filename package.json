@@ -47,6 +47,6 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
-    "pretty-easy-data-types": "^1.0.2"
+    "pretty-easy-data-types": "^1.0.3"
   }
 }
