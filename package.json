@@ -1,6 +1,6 @@
 {
   "name": "pretty-easy-date-check",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Check if a supplied value is a valid Date (instanceof Date or a valid string representation of a date that can be turned into one by instantiating Date class).",
   "author": "Ognjen Jevremović <jevremovic.ognjen@gmail.com> (https://github.com/ognjenjevremovic)",
   "homepage": "https://github.com/ognjenjevremovic/pretty-easy-date-check",
@@ -20,10 +20,13 @@
   },
   "scripts": {
     "test": "mocha ./tests/spec.js",
+    
     "compile" : "npm run remove:compiled && npm run tsc && npm run move:test && npm run move:base",
     "tsc": "tsc",
+    
     "move:base" : "cp -ap dist/lib/* dist/ && rm -rf dist/lib",
     "move:test" : "cp -ap dist/tests/* tests/ && rm -rf dist/tests",
+    
     "remove:compiled": "npm run remove:dist && npm run remove:tests",
     "remove:tests": "rm -f tests/*.js && rm -f tests/*.js.map && rm -f tests/*.d.ts && rm -f tests/**/*.js && rm -f tests/**/*.js.map && rm -f tests/**/*.d.ts",
     "remove:dist": "rm -f ./dist/*.js && rm -f ./dist/*.js.map"
