@@ -102,10 +102,10 @@ else console.log(`Valid date supplied`);
 
 &nbsp;
 
-### Changelog
+## Releases
 The module follows the Semantic Versioning standard to communicate what kinds of changes are introduced in the new releases.
 
-##### Releases
+### Versioning
  * *Patch releases* : n.n.**X** -> Bug fixes, documentation updates, code cleanups, new test cases, optimization stuff and other minor changes that you should probably not be aware of;
  * *Minor releases* : n.**X**.n -> New feature(s) which don't break the existing ones. These ofter refer to minor TypeScript API changes (mainly due to declarations; JavaScript code will not be affected by these changes), code refactoring, some under the sheet changes that you should not worry about too much;
  * *Major releases* : **X**.n.n -> Changes that could *possibly* introduce the backwards compatibility issues. These are however very ***rare*** and could be relevant to you only in the case of an endpoint API change and the way you communicate with the module.
