@@ -15,9 +15,9 @@ function stringDate(value) {
     if (!value.length)
         return false;
     //  MM.DD.YYYY. - format
-    //  valid separators -> .,/-
-    if (value.length < 12) {
-        var date = value.split(/[.]|[,]|[/]|[-]|\s/g);
+    //  valid separators -> . , / - \s
+    if (value.search(/[.,/\\-]/g) > -1) {
+        var date = value.split(/[.,/-\s]/g);
         var month = +date[0];
         var day = +date[1];
         var isValid = void 0;
@@ -27,8 +27,8 @@ function stringDate(value) {
         }
         return isValid ? !isNaN(Date.parse(value)) : false;
     }
-    else
-        return !isNaN(Date.parse(value));
+    //  YYYY-MM-DDTTT:HH:MM.SSSZ - format
+    return !isNaN(Date.parse(value));
 }
 exports.stringDate = stringDate;
 //# sourceMappingURL=makeDate.js.map

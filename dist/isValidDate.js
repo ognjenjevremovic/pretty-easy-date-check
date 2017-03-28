@@ -13,7 +13,7 @@ var makeDate_1 = require("./makeDate");
  * @param {param} value
  * @returns {boolean}
  */
-function isValidDate(value) {
+function default_1(value) {
     if (pretty_easy_data_types_1.isString(value))
         return makeDate_1.stringDate(value);
     else if (pretty_easy_data_types_1.isDate(value))
@@ -21,5 +21,5 @@ function isValidDate(value) {
     else
         return false;
 }
-exports.isValidDate = isValidDate;
+exports.default = default_1;
 //# sourceMappingURL=isValidDate.js.map

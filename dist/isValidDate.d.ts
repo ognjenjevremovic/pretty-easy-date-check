@@ -9,4 +9,4 @@ export declare type param = string | Date;
  * @param {param} value
  * @returns {boolean}
  */
-export declare function isValidDate(value: param): boolean;
+export default function (value: param): boolean;
