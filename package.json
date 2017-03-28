@@ -19,7 +19,14 @@
     "node" : ">=1.8"
   },
   "scripts": {
-    "test": "mocha ./tests/spec.js"
+    "test": "mocha ./tests/spec.js",
+    "compile" : "npm run remove:compiled && npm run tsc && npm run move:test && npm run move:base",
+    "tsc": "tsc",
+    "move:base" : "cp -ap dist/lib/* dist/ && rm -rf dist/lib",
+    "move:test" : "cp -ap dist/tests/* tests/ && rm -rf dist/tests",
+    "remove:compiled": "npm run remove:dist && npm run remove:tests",
+    "remove:tests": "rm -f tests/*.js && rm -f tests/*.js.map && rm -f tests/*.d.ts && rm -f tests/**/*.js && rm -f tests/**/*.js.map && rm -f tests/**/*.d.ts",
+    "remove:dist": "rm -f ./dist/*.js && rm -f ./dist/*.js.map"
   },
   "keywords": [
     "pretty-easy-date-check",

@@ -15,9 +15,9 @@ export function stringDate(value: string): boolean {
     if(!value.length) return false;
 
     //  MM.DD.YYYY. - format
-    //  valid separators -> .,/-
-    if(value.length < 12) {
-        const date  : string[]  = value.split(/[.]|[,]|[/]|[-]|\s/g);
+    //  valid separators -> . , / - \s
+    if(value.search(/[.,/\\-]/g) > -1) {
+        const date  : string[]  = value.split(/[.,/-\s]/g);
         const month : number    = +date[0];
         const day   : number    = +date[1];
 
@@ -30,5 +30,5 @@ export function stringDate(value: string): boolean {
     }
 
     //  YYYY-MM-DDTTT:HH:MM.SSSZ - format
-    else return !isNaN(Date.parse(value));
+    return !isNaN(Date.parse(value));
 }

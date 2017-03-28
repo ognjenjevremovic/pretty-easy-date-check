@@ -2,6 +2,7 @@
 import { isString, isDate } from 'pretty-easy-data-types';
 import { stringDate } from './makeDate';
 
+
 //  Expected types
 export type param = string | Date;
 
@@ -16,7 +17,7 @@ export type param = string | Date;
  * @param {param} value
  * @returns {boolean}
  */
-export function isValidDate(value: param): boolean {
+export default function(value: param): boolean {
     if  (isString(value)) return stringDate(value as string);
     else if (isDate(value)) return true;
     else return false;
