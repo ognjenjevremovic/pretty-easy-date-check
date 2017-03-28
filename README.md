@@ -111,17 +111,17 @@ The module follows the Semantic Versioning standard to communicate what kinds of
  * *Major releases* : **X**.n.n -> Changes that could *possibly* introduce the backwards compatibility issues. These are however very ***rare*** and could be relevant to you only in the case of an endpoint API change and the way you communicate with the module.
 
 ### Changelogs
- * **03/28** *1.2.0* - Various improvements, new test cases, TypeScript API changes (due to definition updates) and documentation updates to reflect the changes
- * **03/20** *1.1.3* - Support for Node < 1.8 abbandoned, modular approach to unit tests, new test cases and documentation updates to reflect the changes
- * **03/16** *1.1.2* - Documenation updates
- * **03/15** *1.1.1* - Documentation updates
- * **03/15** *1.1.0* - Dependancy updates
- * **03/14** *1.0.5* - Minor improvement
- * **03/13** *1.0.4* - Typescript declaration conflicts
- * **03/13** *1.0.3* - Additional test cases provided
- * **03/13** *1.0.2* - Minor improvement
- * **03/12** *1.0.1* - Bugfix (falsy values related)
- * **03/10** *1.0.0* - Initial release
+ * **03/28** *v1.2.0* - Various improvements, new test cases, TypeScript API changes (due to definition updates) and documentation updates to reflect the changes
+ * **03/20** *v1.1.3* - Support for Node < 1.8 abbandoned, modular approach to unit tests, new test cases and documentation updates to reflect the changes
+ * **03/16** *v1.1.2* - Documenation updates
+ * **03/15** *v1.1.1* - Documentation updates
+ * **03/15** *v1.1.0* - Dependancy updates
+ * **03/14** *v1.0.5* - Minor improvement
+ * **03/13** *v1.0.4* - Typescript declaration conflicts
+ * **03/13** *v1.0.3* - Additional test cases provided
+ * **03/13** *v1.0.2* - Minor improvement
+ * **03/12** *v1.0.1* - Bugfix (falsy values related)
+ * **03/10** *v1.0.0* - Initial release
 
 &nbsp;
 
