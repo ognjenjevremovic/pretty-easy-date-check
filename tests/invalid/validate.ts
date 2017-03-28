@@ -1,10 +1,7 @@
 //  Dependancie
 import * as assert from 'assert';
-import * as isValidDate from '../..';
+import isValidDate from '../..';
 
-
-//  For test purposes only
-declare function isValidDate(date?: any): Boolean;
 
 //  Should return an Error
 const shouldReturnError: string = 'Should return a boolean false ->';
