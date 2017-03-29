@@ -107,42 +107,53 @@ else console.log(`Valid date supplied`);
 The module follows the Semantic Versioning standard to communicate what kinds of changes are introduced in the new releases.
 
 ### Versioning
- *Patch releases* : n.n.**X** -> Bug fixes, documentation updates, code cleanups, new test cases, optimization stuff and other minor changes that you should probably not be aware of;
- &nbsp;
- *Minor releases* : n.**X**.n -> New feature(s) which don't break the existing ones. These ofter refer to minor TypeScript API changes (mainly due to declarations; JavaScript code will not be affected by these changes), code refactoring, some under the sheet changes that you should not worry about too much;
- &nbsp;
- *Major releases* : **X**.n.n -> Changes that could *possibly* introduce the backwards compatibility issues. These are however very ***rare*** and could be relevant to you only in the case of an endpoint API change and the way you communicate with the module.
+*Patch releases* : n.n.**X** -> Bug fixes, documentation updates, code cleanups, new test cases, optimization stuff and other minor changes that you should probably not be aware of;
+&nbsp;
+*Minor releases* : n.**X**.n -> New feature(s) which don't break the existing ones. These ofter refer to minor TypeScript API changes (mainly due to declarations; JavaScript code will not be affected by these changes), code refactoring, some under the sheet changes that you should not worry about too much;
+&nbsp;
+*Major releases* : **X**.n.n -> Changes that could *possibly* introduce the backwards compatibility issues. These are however very ***rare*** and could be relevant to you only in the case of an endpoint API change and the way you communicate with the module.
 
 ### Changelogs
 **03/29** - *v1.2.1*
  * Bugfix
  * Documentation updates
+
 **03/28** - *v1.2.0*
  * Various improvements 
  * New test cases
  * TypeScript API changes (due to definition updates)
  * Documentation updates to reflect the changes
+
 **03/20** - *v1.1.3*
  * Support for Node < 1.8 abbandoned
  * Modular approach to unit tests
  * New test cases
  * Documentation updates to reflect the changes
+
 **03/16** - *v1.1.2*
  * Documenation updates
+
 **03/15** - *v1.1.1*
  * Documentation updates
+
 **03/15** - *v1.1.0*
  * Dependancy updates
+
 **03/14** - *v1.0.5*
  * Minor improvement
+
 **03/13** - *v1.0.4*
  * Typescript declaration conflicts
+
 **03/13** - *v1.0.3*
  * Additional test cases provided
+
 **03/13** - *v1.0.2*
  * Minor improvement
+
 **03/12** - *v1.0.1*
  * Bugfix (falsy values related)
+
 **03/10** - *v1.0.0*
  * Initial release
 
