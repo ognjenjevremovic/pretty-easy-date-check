@@ -10,7 +10,7 @@ import { months } from './months';
  * @param {string} value
  * @returns {boolean}
  */
-export function stringDate(value: string): boolean {
+export function stringDate(value : string) : boolean {
     //  Empty string
     if(!value.length) return false;
 
@@ -21,7 +21,7 @@ export function stringDate(value: string): boolean {
         const month : number    = +date[0];
         const day   : number    = +date[1];
 
-        let isValid: boolean;
+        let isValid : boolean;
         for(const _month of months) {
             (_month.ord >= month && _month.days >= day) ? isValid = true : isValid = false;
         }

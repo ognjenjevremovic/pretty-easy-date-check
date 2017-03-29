@@ -1,6 +1,6 @@
 //  Dependancie
 import * as assert from 'assert';
-import isValidDate from '../..';
+import { default as isValidDate } from '../../dist';
 
 
 //  Should return an Error

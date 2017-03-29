@@ -17,7 +17,7 @@ export type param = string | Date;
  * @param {param} value
  * @returns {boolean}
  */
-export default function(value: param): boolean {
+export default function(value : param) : boolean {
     if  (isString(value)) return stringDate(value as string);
     else if (isDate(value)) return true;
     else return false;

@@ -10,7 +10,7 @@ export class Month {
 
 
 //  Months array
-export const months: Month[] = [
+export const months : Month[] = [
     new Month(  'January'   , 'Jan', 1, 31),
     new Month(  'February'  , 'Feb', 2, 28),
     new Month(  'March'     , 'Mar', 3, 31),
