@@ -119,7 +119,10 @@ The module follows the Semantic Versioning standard to communicate what kinds of
 ## Changelogs
 
 &nbsp;
-**03/29** - *v1.2.3*
+**03/30** - *v1.2.3*
+ * Tiny improvement, for module consistancy
+
+**03/30** - *v1.2.3*
  * TypeScript intelisense and declaration improvements
  * Documentation updates
 

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 //  Dependancie
 var assert = require("assert");
-var dist_1 = require("../../dist");
+var __1 = require("../..");
 //  Should return an Array of numbers
 var shouldReturnString = 'Should return a boolean true ->';
 /**
@@ -15,7 +15,7 @@ var shouldReturnString = 'Should return a boolean true ->';
  * @returns {*}
  */
 function validDateValue_returnsTrue(info, value) {
-    it(shouldReturnString + " " + info, function () { return assert.equal(dist_1.default(value), true); });
+    it(shouldReturnString + " " + info, function () { return assert.equal(__1.default(value), true); });
 }
 exports.validDateValue_returnsTrue = validDateValue_returnsTrue;
 //# sourceMappingURL=validate.js.map

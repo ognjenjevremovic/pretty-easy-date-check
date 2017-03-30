@@ -1,6 +1,6 @@
 //  Dependancie
 import * as assert from 'assert';
-import { default as isValidDate } from '../../dist';
+import { default as isValidDate } from '../..';
 
 
 //  Should return an Array of numbers
