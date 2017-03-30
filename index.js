@@ -19,4 +19,9 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+
+//  JavaScript
 module.exports = require("./dist").default;
+
+//  TypeScript
+module.exports.default = require('./dist').default;

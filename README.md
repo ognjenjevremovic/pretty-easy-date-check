@@ -22,7 +22,6 @@ $ npm install pretty-easy-date-check --save
 ```
 ***--save*** *flag is used to save the module as a project dependancy in your package.json file.*
 
-
 &nbsp;
 
 # Usage
@@ -30,13 +29,13 @@ After installing the module (localy in your project directory), in order to use 
 ```javascript
 let isValidDate = require('pretty-easy-date-check');
 ```
-&nbsp
+&nbsp;
 
 or if you use TypeScript
 ```typescript
-import isValidDate from 'pretty-easy-date-check'
+import { default as isValidDate } from 'pretty-easy-date-check';
 ```
-&nbsp
+&nbsp;
 
 The module returns a function for you to call and supply it with parameter that you'd like to check if it is a valid Date or a string representation of a valid date (*see the examples of valid dates, down below*).
 The function returns a Boolean.
@@ -64,7 +63,7 @@ isValidDate(new Date().toString());    //  true
 ```
 &nbsp;
 
-##### ***Important :***
+#### ***Important :***
 The module will return a boolean **true** if the value passed is :
  * an instance of Date constructor class or 
  * valid string representation of date
@@ -115,7 +114,18 @@ The module follows the Semantic Versioning standard to communicate what kinds of
 
 *Major releases* : **X**.n.n -> Changes that could *possibly* introduce the backwards compatibility issues. These are however very ***rare*** and could be relevant to you only in the case of an endpoint API change and the way you communicate with the module.
 
-### Changelogs
+&nbsp;
+
+## Changelogs
+
+&nbsp;
+**03/29** - *v1.2.3*
+ * TypeScript intelisense and declaration improvements
+ * Documentation updates
+
+**03/29** - *v1.2.2*
+ * Documentation updates
+
 **03/29** - *v1.2.1*
  * Bugfix
  * Documentation updates
